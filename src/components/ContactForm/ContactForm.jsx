@@ -1,8 +1,12 @@
 import React, { useState } from 'react';
-import initialState from './initialState';
 
 import PropTypes from 'prop-types';
 import s from '../App.module.css';
+
+const initialState = {
+  name: '',
+  number: '',
+};
 
 const ContactForm = ({ onSubmit }) => {
   const [state, setState] = useState({ ...initialState });
